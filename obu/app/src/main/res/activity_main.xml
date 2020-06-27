@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="100dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Wifi"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/frame" />
+    <ImageView
+        android:id="@+id/GPS"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/Wifi"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/p1" />
+    <ImageView
+        android:id="@+id/OBU"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/GPS"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/frame" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        android:onClick="doClick"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/OBU"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        android:src="@drawable/p5" />
+</RelativeLayout>
